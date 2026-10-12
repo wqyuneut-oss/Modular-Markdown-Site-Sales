@@ -1,15 +1,15 @@
 ---
-tag: 03 / SERVICES
-title: Four angles, thought through at once.
+tag: 03 / 服務項目
+title: 四個面向，一次想清楚。
 services:
-  - title: Family Protection
-    detail: Life, accident, disability — first we calculate how big a safety net your family needs, then we talk products. On a tight budget, we fill the most critical gap first.
-  - title: Health & Medical
-    detail: Indemnity medical, critical illness, long-term care — a clear-eyed look at Taiwan's healthcare reality. No riders you'll never use; only what matters when it counts.
-  - title: Legacy Planning
-    detail: Beneficiary designations, tax considerations, wealth distribution. Using insurance's legal features so what you want to leave, goes to whom you choose.
-  - title: Business Owners & HNW
-    detail: Directors' liability, business continuity, tax-efficient structures. Protecting what a lifetime of work has built.
+  - title: 家庭保障規劃
+    detail: 壽險、意外、失能——先算出家庭需要多少安全網，再談商品。預算有限時，優先補最重要的缺口。
+  - title: 醫療健康規劃
+    detail: 實支實付、重大傷病、長照，一次看懂台灣醫療現況。不推銷用不到的附約，只留關鍵時刻派得上用場的。
+  - title: 資產傳承規劃
+    detail: 保單指定受益人、稅務考量、財富分配。用保險的法律特性，讓你想留給誰，就留給誰。
+  - title: 企業主與高資產規劃
+    detail: 董監事責任、企業延續、節稅架構。為打拚一輩子的你，守住成果。
 ---
 
-Every proposal I deliver includes a one-page "why it's structured this way" — if you can't understand it, you shouldn't sign it.
+每一份規劃書，我都會附上一頁「為什麼這樣配」——讓你看得懂，才簽得下去。

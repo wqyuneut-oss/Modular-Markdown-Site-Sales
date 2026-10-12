@@ -1,22 +1,22 @@
 ---
-tag: 02 / ABOUT
-title: People first, business second.
-quote: When a client entrusts you with a lifetime of savings, that trust outweighs any policy.
-quoteBy: Jian-Hong Lin
-credentialsTitle: Licenses & Credentials
+tag: 02 / 關於我
+title: 先做人，再做業務。
+quote: 客戶把一輩子的積蓄交給你，這份信任，重過任何一張保單。
+quoteBy: 林建宏
+credentialsTitle: 專業證照
 credentials:
-  - title: Life Insurance Broker
-    detail: National examination qualified
-  - title: Property Insurance Broker
-    detail: National examination qualified
-  - title: Investment-Linked Insurance Salesperson
-    detail: Life Insurance Association certified
-  - title: Registered Financial Consultant (RFC)
-    detail: Internationally certified
+  - title: 人身保險經紀人
+    detail: 國家考試合格
+  - title: 財產保險經紀人
+    detail: 國家考試合格
+  - title: 投資型保險商品業務員
+    detail: 壽險公會認證
+  - title: 退休理財規劃顧問（RFC）
+    detail: 國際認證
 ---
 
-Fifteen years ago, I moved from bank wealth management to insurance brokerage. The reason was simple: at the bank, I could only sell my employer's products. Here, I stand on the client's side and pick the best fit across the entire market.
+十五年前，我從銀行理專轉做保險經紀人。原因很簡單：在銀行，我只能賣自家的商品；在這裡，我可以站在客戶這邊，挑全市場最適合的方案。
 
-Over the years, I've handled claims and walked with clients through their lowest moments. I learned one thing: what we sell isn't policies — it's "when something happens, someone picks up the phone."
+這些年，我處理過理賠，也陪客戶走過低谷。我學到一件事：保險賣的不是保單，是「出事的時候，有人會接電話」。
 
-So my phone stays on around the clock. When a client is rushed to the ER at midnight, the first call goes to me, not the insurer. That is the trust I'm after.
+所以我的手機二十四小時開機。客戶半夜急診，第一通電話打給我，而不是保險公司——這就是我要的信任。
