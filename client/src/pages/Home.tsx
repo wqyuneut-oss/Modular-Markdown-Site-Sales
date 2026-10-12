@@ -16,9 +16,13 @@ function PortraitArch({ portrait, name, note }: { portrait: string; name: string
       {portrait ? (
         <img src={portrait} alt={name} />
       ) : (
-        <div className="portrait-placeholder">
-          <div>{name}</div>
-          <div>{note}</div>
+        <div className="portrait-pending">
+          <span className="pp-watermark" aria-hidden="true">
+            {name.slice(0, 1)}
+          </span>
+          <span className="pp-seal">{name.slice(0, 1)}</span>
+          <div className="pp-name">{name}</div>
+          <div className="pp-note">{note}</div>
         </div>
       )}
     </div>
@@ -108,14 +112,10 @@ export default function Home() {
                     <ChevronRight size={16} />
                   </button>
                 </div>
-                <div className="hero-seal-wrap">
-                  <Seal char={t.hero.sealChar} />
-                  <span className="hero-seal-note">{t.hero.sealNote}</span>
-                </div>
               </div>
               <div className="hero-portrait">
-                <span className="vertical-strip">{t.hero.verticalText}</span>
                 <div className="portrait-arch">
+                  <span className="vertical-strip">{t.hero.verticalText}</span>
                   <PortraitArch portrait={t.hero.portrait} name={t.hero.name} note={t.hero.portraitNote} />
                   <Seal char={t.hero.sealChar} />
                 </div>
@@ -126,6 +126,58 @@ export default function Home() {
               <div className="section-tag">{t.home.tag}</div>
               <h2>{t.home.title}</h2>
               <div className="section-lede" dangerouslySetInnerHTML={{ __html: t.home.bodyHtml }} />
+              <div className="home-feature">
+                <article className="hf-col">
+                  <div className="hf-tag">{t.services.tag}</div>
+                  <h3 className="hf-title">{t.services.title}</h3>
+                  <div className="hf-rows">
+                    {t.services.services.slice(0, 3).map((s) => (
+                      <div className="hf-row" key={s.title}>
+                        <strong>{s.title}</strong>
+                        <small>{s.detail}</small>
+                      </div>
+                    ))}
+                  </div>
+                  <button className="hf-more" onClick={() => go("/services")} aria-label={t.services.title}>
+                    <ArrowUpRight size={16} />
+                  </button>
+                </article>
+                <article className="hf-col">
+                  <div className="hf-tag">{t.testimonials.tag}</div>
+                  <h3 className="hf-title">{t.testimonials.title}</h3>
+                  {t.testimonials.quotes.slice(0, 1).map((q) => (
+                    <div className="hf-quote" key={q.name}>
+                      <span className="mark">“</span>
+                      <p>{q.text}</p>
+                      <footer>
+                        <strong>{q.name}</strong>
+                        <span>{q.role}</span>
+                      </footer>
+                    </div>
+                  ))}
+                  <button className="hf-more" onClick={() => go("/testimonials")} aria-label={t.testimonials.title}>
+                    <ArrowUpRight size={16} />
+                  </button>
+                </article>
+                <article className="hf-col">
+                  <div className="hf-tag">{t.honors.tag}</div>
+                  <h3 className="hf-title">{t.honors.title}</h3>
+                  <div className="hf-stats">
+                    {t.honors.stats.slice(0, 3).map((s) => (
+                      <div className="hf-stat" key={s.label}>
+                        <b>
+                          {s.number}
+                          <em>{s.suffix}</em>
+                        </b>
+                        <small>{s.label}</small>
+                      </div>
+                    ))}
+                  </div>
+                  <button className="hf-more" onClick={() => go("/honors")} aria-label={t.honors.title}>
+                    <ArrowUpRight size={16} />
+                  </button>
+                </article>
+              </div>
               <div className="home-links">
                 {t.home.links.map((link, index) => (
                   <button key={link.path} onClick={() => go(link.path)}>
