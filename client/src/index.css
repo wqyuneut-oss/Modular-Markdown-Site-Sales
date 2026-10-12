@@ -12,7 +12,7 @@ html:lang(zh) body, html:lang(zh) .trust-shell { line-height: 1.6; }
 body { margin: 0; }
 img { max-width: 100%; }
 
-.trust-shell { --paper: #f6f3ea; --paper-deep: #ede6d2; --ink: #1e1b15; --seal: #a33327; --brass: #8a6d2f; --muted: #6e665a; --line: rgba(30,27,21,.14); min-height: 100vh; background: var(--paper); color: var(--ink); }
+.trust-shell { display: flex; flex-direction: column; --paper: #f6f3ea; --paper-deep: #ede6d2; --ink: #1e1b15; --seal: #a33327; --brass: #8a6d2f; --muted: #6e665a; --line: rgba(30,27,21,.14); min-height: 100vh; background: var(--paper); color: var(--ink); }
 .trust-shell h1, .trust-shell h2, .trust-shell h3, .serif { font-family: 'Noto Serif TC', serif; }
 
 /* ---------- 印章 ---------- */
@@ -25,18 +25,26 @@ img { max-width: 100%; }
 .trust-header { position: sticky; top: 0; z-index: 20; display: flex; align-items: center; justify-content: space-between; min-height: 76px; padding: 14px clamp(20px, 5vw, 64px); border-bottom: 1px solid var(--line); background: rgba(246,243,234,.94); backdrop-filter: blur(12px); }
 .trust-brand { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; }
 .trust-brand strong { font-family: 'Noto Serif TC', serif; font-size: 19px; font-weight: 600; letter-spacing: .04em; }
-.trust-brand small { display: block; color: var(--muted); font-size: 10px; letter-spacing: .22em; }
+.trust-brand small { display: block; color: var(--seal); font-size: 10px; font-weight: 500; letter-spacing: .22em; }
 .trust-nav { display: flex; align-items: center; gap: clamp(14px, 2.4vw, 30px); }
 .trust-nav a, .trust-nav button { color: var(--ink); font-size: 12.5px; letter-spacing: .14em; text-decoration: none; background: none; border: 0; cursor: pointer; padding: 4px 0; position: relative; }
-.trust-nav a::after { content: ''; position: absolute; left: 0; bottom: 0; height: 2px; width: 0; background: var(--seal); transition: width .22s ease; }
-.trust-nav a:hover::after, .trust-nav a.is-active::after { width: 100%; }
-.trust-nav a.is-active { color: var(--seal); }
+.trust-nav button::after { content: ''; position: absolute; left: 0; bottom: 0; height: 2px; width: 0; background: var(--seal); transition: width .22s ease; }
+.trust-nav button:hover::after, .trust-nav button.is-active::after { width: 100%; }
+.trust-nav button.is-active { color: var(--seal); }
 .trust-menu-btn { display: none; border: 0; background: none; color: var(--ink); cursor: pointer; }
 .trust-actions { display: flex; align-items: center; gap: 10px; }
 .lang-btn { display: inline-flex; align-items: center; gap: 7px; padding: 9px 15px; border: 1px solid var(--line); border-radius: 999px; background: transparent; color: var(--ink); font-size: 12px; letter-spacing: .14em; cursor: pointer; }
 .subhead { margin: 44px 0 0; font-family: 'Noto Serif TC', serif; font-size: 21px; font-weight: 600; letter-spacing: .1em; display: flex; align-items: center; gap: 12px; }
 .subhead::before { content: ''; width: 22px; height: 2px; background: var(--seal); }
-.trust-footer { display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; padding: 26px clamp(20px, 5vw, 64px); border-top: 1px solid var(--line); color: var(--muted); font-size: 11.5px; letter-spacing: .12em; }
+.trust-shell main { flex: 1; }
+.trust-footer { display: block; padding: 42px clamp(20px, 5vw, 64px) 28px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11.5px; letter-spacing: .12em; }
+.tf-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
+.tf-brand { display: flex; align-items: center; gap: 12px; color: var(--ink); font-family: 'Noto Serif TC', serif; font-size: 15px; font-weight: 600; }
+.tf-nav { display: flex; flex-wrap: wrap; gap: 4px 22px; max-width: 420px; }
+.tf-nav button { background: none; border: 0; padding: 5px 0; color: var(--muted); font-size: 12px; letter-spacing: .14em; cursor: pointer; }
+.tf-nav button:hover { color: var(--seal); }
+.tf-contact { display: grid; gap: 8px; text-align: right; font-size: 12px; letter-spacing: .08em; }
+.tf-bottom { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 11px; }
 .trust-footer .seal-stamp { width: 30px; height: 30px; font-size: 16px; }
 
 /* ---------- 通用：段首 ---------- */
@@ -111,7 +119,7 @@ img { max-width: 100%; }
 .story-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 5vw; margin-top: 56px; align-items: start; }
 .story-quote { border-left: 3px solid var(--seal); padding: 6px 0 6px 26px; font-family: 'Noto Serif TC', serif; font-size: clamp(20px, 2.6vw, 28px); line-height: 1.7; }
 .story-quote footer { margin-top: 14px; font-family: 'Noto Sans TC', sans-serif; font-size: 12.5px; color: var(--muted); letter-spacing: .2em; }
-.story-body { color: var(--muted); font-size: 15.5px; line-height: 2; }
+.story-body { max-width: 62ch; color: var(--muted); font-size: 15.5px; line-height: 2; }
 .story-body p { margin: 0 0 18px; }
 .cred-list { margin: 44px 0 0; border-top: 1px solid var(--line); }
 .cred-row { display: flex; align-items: baseline; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line); }
