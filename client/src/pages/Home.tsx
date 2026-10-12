@@ -210,7 +210,7 @@ export default function Home() {
                     <div className="cred-row" key={c.title}>
                       <span className="dot" />
                       <div>
-                        <strong>{c.title}</strong>
+                        <strong>{c.title.trimStart()}</strong>
                         <br />
                         <span>{c.detail}</span>
                       </div>
@@ -333,11 +333,29 @@ export default function Home() {
       </main>
 
       <footer className="trust-footer">
-        <Seal char={t.hero.sealChar} mini />
-        <span>
-          {siteMeta.shortName} · {t.contact.company}
-        </span>
-        <span>{t.chrome.footerNote}</span>
+        <div className="tf-top">
+          <div className="tf-brand">
+            <Seal char={t.hero.sealChar} mini />
+            <span>
+              {siteMeta.shortName} · {t.contact.company}
+            </span>
+          </div>
+          <nav className="tf-nav">
+            {t.chrome.nav.map((item) => (
+              <button key={item.path} onClick={() => go(item.path)}>
+                {item.label}
+              </button>
+            ))}
+          </nav>
+          <div className="tf-contact">
+            <span>{t.contact.phone}</span>
+            <span>{t.contact.email}</span>
+          </div>
+        </div>
+        <div className="tf-bottom">
+          <span>© {new Date().getFullYear()} {siteMeta.shortName}</span>
+          <span>{t.chrome.footerNote}</span>
+        </div>
       </footer>
     </div>
   );
