@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "incremental": true,
+    "jsx": "preserve",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "paths": {
+      "@/*": [
+        "./client/src/*"
+      ]
+    },
+    "skipLibCheck": true,
+    "strict": true,
+    "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
+    "types": [
+      "node",
+      "vite/client"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist",
+    "**/*.test.ts",
+    "client/src/components/**/*",
+    "client/src/lib/**/*",
+    "client/src/hooks/**/*",
+    "client/src/contexts/**/*",
+    "client/src/const.ts",
+    "client/src/pages/NotFound.tsx"
+  ],
+  "include": [
+    "client/src/**/*",
+    "worker/**/*"
+  ]
+}
