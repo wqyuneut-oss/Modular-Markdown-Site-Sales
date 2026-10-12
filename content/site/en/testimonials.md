@@ -1,16 +1,17 @@
 ---
-tag: 04 / 客戶見證
-title: 他們說的，比我說的可信。
+tag: 04 / TESTIMONIALS
+title: Their words carry more weight than mine.
 quotes:
-  - text: 先生車禍住院那個月，林先生三天兩頭跑醫院，理賠文件全部幫我們辦到好。保險買了十年，第一次覺得「還好有買」。
-    name: 陳太太
-    role: 家庭主婦 · 客戶 8 年
-  - text: 我本來很排斥保險業務員。但他第一次見面就說：「你現在不需要買，先把觀念弄懂。」三年後我主動找他規劃。
-    name: 黃先生
-    role: 科技業工程師 · 客戶 5 年
-  - text: 公司交接、遺產分配，這種事問律師很貴，問朋友不懂。他幫我們全家開了三次家庭會議，全部講到長輩聽得懂為止。
-    name: 吳董事長
-    role: 傳產企業主 · 客戶 11 年
+  - text: The month my husband was hospitalized after a car accident, Mr. Lin was at the hospital every few days and handled every claims document for us. Ten years of paying premiums — the first time I thought "thank goodness we had it."
+    name: Mrs. Chen
+    role: Homemaker · Client for 8 years
+  - text: >-
+      I used to avoid insurance agents. At our first meeting he said: "You don't need to buy anything now — let's get the concepts right first." Three years later I came back to him on my own.
+    name: Mr. Huang
+    role: Tech engineer · Client for 5 years
+  - text: Business handover, inheritance — lawyers are expensive and friends don't understand. He held three family meetings for us and explained until even the elders understood.
+    name: Chairman Wu
+    role: Manufacturing business owner · Client for 11 years
 ---
 
-每一則見證，都經過客戶本人同意刊登。
+Every testimonial is published with the client's consent.

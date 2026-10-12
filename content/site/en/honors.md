@@ -1,29 +1,29 @@
 ---
-tag: 06 / 榮譽實績
-title: 數字會說話。
+tag: 06 / HONORS
+title: The numbers speak.
 stats:
   - number: "15"
-    suffix: 年
-    label: 深耕保險業
+    suffix: yrs
+    label: In insurance
   - number: "800"
     suffix: "+"
-    label: 服務家庭
+    label: Families served
   - number: "98"
     suffix: "%"
-    label: 客戶續保率
+    label: Renewal rate
   - number: "5"
-    suffix: 屆
-    label: MDRT 百萬圓桌
-awardsTitle: 獲獎紀錄
+    suffix: yrs
+    label: MDRT member
+awardsTitle: Awards
 awards:
   - year: "2025"
-    text: MDRT 百萬圓桌會員（連續第五年）
+    text: MDRT Million Dollar Round Table (5th consecutive year)
   - year: "2024"
-    text: 大誠保經年度服務品質獎
+    text: Dacheng Brokerage Service Quality Award
   - year: "2023"
-    text: IDA 國際龍獎・優秀業務銀獎
+    text: IDA International Dragon Award · Silver
   - year: "2021"
-    text: 壽險公會模範業務員
+    text: Life Insurance Association Model Agent
 ---
 
-數字背後，是八百個家庭把人生最重要的決定交給我。
+Behind the numbers: 800 families who entrusted me with life's most important decisions.
